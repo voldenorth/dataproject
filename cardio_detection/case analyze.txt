@@ -1,0 +1,48 @@
+Case Analysis: Cardiovascular Disease Dataset
+
+Data Description
+
+The dataset consists of 1000 rows and 13 columns.
+There are no null values in the dataset.
+No duplicates are found in the dataset.
+Statistical Description
+
+Patient ages range from 20 to 80 years, with an average age of around 49 years.
+The majority of patients are male (76.5% male, 23.5% female).
+There are several numeric columns such as resting blood pressure (restingBP), serum cholesterol, maximum heart rate (maxheartrate), etc.
+The target variable "target" is a binary variable indicating the presence or absence of cardiovascular disease.
+Variable Correlations
+
+The correlation table and heatmap show some correlations between variables.
+Correlations can provide insights into the relationships between variables; for example, maximum heart rate (maxheartrate) has a negative correlation with age.
+Data Visualization
+
+Pairplot is used to visualize the distribution and correlation between variables, with different colors for the target category.
+The histogram of patient age shows the distribution of patient ages in the dataset.
+Gender Analysis
+
+The countplot graph shows that the majority of patients are male.
+Within the gender group, the number of cases of cardiovascular disease (target) is compared for males and females.
+Machine Learning Modeling
+
+The RandomForestClassifier model is used to predict cardiovascular disease.
+The dataset is split into training data (70%) and test data (30%).
+The model achieves an accuracy of around 98.33% on the test data.
+The confusion matrix shows that the model performs well in predicting the "absence" and "presence" classes of cardiovascular disease.
+Model Storage
+
+The RandomForestClassifier model is saved using joblib with the name "RFC_cardio.joblib".
+Conclusion:
+
+The dataset is quite clean and does not have missing or duplicate values.
+The machine learning model (Random Forest) provides good results in predicting the presence or absence of cardiovascular disease.
+In the gender analysis, it is observed that the number of males in the dataset is higher, and cases of cardiovascular disease are more frequent in males.
+Recommendations:
+
+Further analysis can be conducted to understand potential risk factors that may influence cardiovascular disease.
+Further modeling or parameter optimization can be done to improve model performance.
+Delving deeper into the relationships between variables and considering new features may provide additional insights.
+
+
+
+
